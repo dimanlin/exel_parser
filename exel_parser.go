@@ -2,7 +2,7 @@ package exel_parser
 
 import (
 	"fmt"
-	"github.com/360EntSecGroup-Skylar/excelize"
+	"github.com/360EntSecGroup-Skylar/excelize/v2"
 )
 
 type XLSXReader struct {
