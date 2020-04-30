@@ -2,9 +2,12 @@ package exel_parser
 
 import (
 	"fmt"
-	"exel_parser/pkg/excelize"
+	"github.com/dimanlin/exel_parser/pkg/excelize"
 )
 
+type XLSXReader struct {
+	filename string
+}
 
 func main() {
 	xlsxReader := XLSXReader{"example.xlsx"}

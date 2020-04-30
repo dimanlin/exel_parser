@@ -1,6 +1,9 @@
 package excelize
 
-import "github.com/360EntSecGroup-Skylar/excelize"
+import (
+	"fmt"
+	"github.com/360EntSecGroup-Skylar/excelize"
+)
 
 type XLSXReader struct {
 	filename string
