@@ -6,7 +6,7 @@ import (
 )
 
 type XLSXReader struct {
-	filename string
+	Filename string
 }
 
 func (xlsxReader *XLSXReader) GetCellValue(sheet string, axis string) (string, error) {
@@ -20,11 +20,11 @@ func (xlsxReader *XLSXReader) GetCellValue(sheet string, axis string) (string, e
 }
 
 func (xlsxReader *XLSXReader) openFile() *excelize.File {
-	if len(xlsxReader.filename) == 0 {
+	if len(xlsxReader.Filename) == 0 {
 		return nil
 	}
 
-	f, err := excelize.OpenFile(xlsxReader.filename)
+	f, err := excelize.OpenFile(xlsxReader.Filename)
 	if err != nil {
 		fmt.Println(err)
 		return nil
