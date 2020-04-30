@@ -1,4 +1,4 @@
-package excelize
+package exel_parser
 
 import (
 	"fmt"
